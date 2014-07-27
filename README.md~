@@ -32,7 +32,7 @@ The tidy data set comes with three files:
 
 =============================================================================================
 Information about the analysis steps in "run_analysis.R"
-## This information is also available together with r code in "run_analysis.R"
+This information is also available together with r code in "run_analysis.R"
 =============================================================================================
  1.Merges the training and the test sets to create one data set.
 
