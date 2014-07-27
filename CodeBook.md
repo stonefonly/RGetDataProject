@@ -10,54 +10,54 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-Time.Body.Acceleration.XYZ
-Time.Gravity.Acceleration.XYZ
-Time.Body.Acceleration.Jerk.XYZ
-Time.Body.Gyroscope.XYZ
-Time.Body.Gyroscope.Jerk.XYZ
-Time.Body.Acceleration.Magnitude
-Time.Gravity.Acceleration.Magnitude
-Time.Body.Acceleration.Jerk.Magnitude
-Time.Body.Gyroscope.Magnitude
-Time.Body.Gyroscope.Jerk.Magnitude
-Frequency.Body.Acceleration.XYZ
-Frequency.Body.Acceleration.Jerk.XYZ
-Frequency.Body.Gyroscope.XYZ
-Frequency.Body.Acceleration.Magnitude
-Frequency.Body.Acceleration.Jerk.Magnitude
-Frequency.Body.Gyroscope.Magnitude
-Frequency.Body.Gyroscope.Jerk.Magnitude
+-Time.Body.Acceleration.XYZ
+-Time.Gravity.Acceleration.XYZ
+-Time.Body.Acceleration.Jerk.XYZ
+-Time.Body.Gyroscope.XYZ
+-Time.Body.Gyroscope.Jerk.XYZ
+-Time.Body.Acceleration.Magnitude
+-Time.Gravity.Acceleration.Magnitude
+-Time.Body.Acceleration.Jerk.Magnitude
+-Time.Body.Gyroscope.Magnitude
+-Time.Body.Gyroscope.Jerk.Magnitude
+-Frequency.Body.Acceleration.XYZ
+-Frequency.Body.Acceleration.Jerk.XYZ
+-Frequency.Body.Gyroscope.XYZ
+-Frequency.Body.Acceleration.Magnitude
+-Frequency.Body.Acceleration.Jerk.Magnitude
+-Frequency.Body.Gyroscope.Magnitude
+-Frequency.Body.Gyroscope.Jerk.Magnitude
 
 =============================================================================================
 Information about variables that were estimated from these signals
 =============================================================================================
 The set of variables that were estimated from these signals are: 
 
-Mean(): Mean value
-STD(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+-Mean(): Mean value
+-STD(): Standard deviation
+-mad(): Median absolute deviation 
+-max(): Largest value in array
+-min(): Smallest value in array
+-sma(): Signal magnitude area
+-energy(): Energy measure. Sum of the squares divided by the number of values. 
+-iqr(): Interquartile range 
+-entropy(): Signal entropy
+-arCoeff(): Autorregresion coefficients with Burg order equal to 4
+-correlation(): correlation coefficient between two signals
+-maxInds(): index of the frequency component with largest magnitude
+-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+-skewness(): skewness of the frequency domain signal 
+-kurtosis(): kurtosis of the frequency domain signal 
+-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+-angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-Gravity.Mean
-time.Body.Acceleration.Mean
-time.Body.Acceleration.Jerk.Mean
-time.Body.Gyroscope.Mean
-time.Body.Gyroscope.Jerk.Mean
+-Gravity.Mean
+-time.Body.Acceleration.Mean
+-time.Body.Acceleration.Jerk.Mean
+-time.Body.Gyroscope.Mean
+-time.Body.Gyroscope.Jerk.Mean
 
 However, we currently use only Mean and STD (Standard deviation) for the tidy data set.
 
