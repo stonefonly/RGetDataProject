@@ -77,4 +77,3 @@ Notes
 =============================================================================================
 Features are normalized and bounded within [-1,1]. So there are no units for these values.
 
-

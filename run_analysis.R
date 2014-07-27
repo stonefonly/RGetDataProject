@@ -108,3 +108,4 @@ rownames(data3)=NULL
 
 # Output 'data3' to a table file as the final tidy data set.
 write.table(data3,'TidyDataSet.txt',row.names=F)
+

@@ -31,8 +31,7 @@ The tidy data set comes with three files:
 	- README.md: This file that explains what the analysis files did. 
 
 =============================================================================================
-Information about the analysis steps in "run_analysis.R"
-## This information is also available together with r code in "run_analysis.R"
+Information about the analysis steps in "run_analysis.R" (This information is also available together with r code in "run_analysis.R")
 =============================================================================================
  1.Merges the training and the test sets to create one data set.
 
@@ -67,5 +66,4 @@ Information about the analysis steps in "run_analysis.R"
 	 - Add the variables "subject" and "activity" back to "data3";
 	 - update their colnames and delete the rownames.
 	 - Output 'data3' to a table file as the final tidy data set.
-
 
