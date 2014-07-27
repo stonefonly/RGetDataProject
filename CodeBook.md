@@ -59,7 +59,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 - time.Body.Gyroscope.Mean
 - time.Body.Gyroscope.Jerk.Mean
 
-However, we currently use only Mean and STD (Standard deviation) for the tidy data set.
+However, we currently use only **Mean** and **STD** (Standard deviation) for the tidy data set.
 
 =============================================================================================
 Information about transformations performed to clean up the data
