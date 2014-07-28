@@ -17,57 +17,56 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 For each record it is provided:
 
-	- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-	- Triaxial Angular velocity from the gyroscope. 
-	- A 561-feature vector with time and frequency domain variables. 
-	- Its activity label. 
-	- An identifier of the subject who carried out the experiment.
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
 
 =============================================================================================
 Information about the analysis files submitted
 =============================================================================================
 The tidy data set comes with three files:
 
-	- run_analysis.R: script for performing the analysis.
-	- CodeBook.md: code book that describes the variables, the data, and any transformations or work that were performed to clean up the data.
-	- README.md: This file that explains what the analysis files did. 
+- run_analysis.R: script for performing the analysis.
+- CodeBook.md: code book that describes the variables, the data, and any transformations or work that were performed to clean up the data.
+- README.md: This file that explains what the analysis files did. 
 
 =============================================================================================
 Information about the analysis steps in "run_analysis.R" 
 =============================================================================================
 (This information is also available together with r code in "run_analysis.R")
 
- 1.Merges the training and the test sets to create one data set.
+1.Merges the training and the test sets to create one data set.
 
-	 - Read in subject/X/y from the training set; combine them into 1 data frame called "data.train".
-	 - Read in subject/X/y from the test set; combine them into 1 data frame called "data.test".
-	 - Combine the training and test data frames into 1 data frame called "data"; delete other temporary data frames.
+- Read in subject/X/y from the training set; combine them into 1 data frame called "data.train".
+- Read in subject/X/y from the test set; combine them into 1 data frame called "data.test".
+- Combine the training and test data frames into 1 data frame called "data"; delete other temporary data frames.
 
- 2.Extracts only the measurements on the mean and standard deviation for each measurement. 
+2.Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-	 - Read in the names of the selected features; use these names to update the colnames of "data".
-	 - Select only measurements on the mean and standard deviation; subtract these measurements to generate a new data frame called "data2". 
-	   ('Subject' and 'Activity' are also subtracted for "data2")
+- Read in the names of the selected features; use these names to update the colnames of "data".
+- Select only measurements on the mean and standard deviation; subtract these measurements to generate a new data frame called "data2" ('Subject' and 'Activity' are also subtracted for "data2").
 
- 3.Uses descriptive activity names to name the activities in the data set.
+3.Uses descriptive activity names to name the activities in the data set.
 
-	 - Read in the activity number and names.
-	 - Use actual names to replace the numbers for activities in "data2".
+- Read in the activity number and names.
+- Use actual names to replace the numbers for activities in "data2".
 
- 4.Appropriately labels the data set with descriptive variable names. 
+4.Appropriately labels the data set with descriptive variable names. 
 
-	 - Get the original variable names from "data2".
-	 - Replace the abbreviations with full words; delete the additional symbols; seperate words with a dot.
-	 - Use the updated variable names to rename the variables in "data2".
+- Get the original variable names from "data2".
+- Replace the abbreviations with full words; delete the additional symbols; seperate words with a dot.
+- Use the updated variable names to rename the variables in "data2".
 
- 5.Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+5.Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-	 - Split the measurements data of 'data2' by activity and subject; 
-	 - get the average of each variable for each activity and each subject;
-	 - create a new data frame called "data3" to store these averaged values.
-	 - The row names of "data3" are actually "subject"."activity";
-	 - split the row names back to "subject" and "activity".
-	 - Add the variables "subject" and "activity" back to "data3";
-	 - update their colnames and delete the rownames.
-	 - Output 'data3' to a table file as the final tidy data set.
+- Split the measurements data of 'data2' by activity and subject; 
+- get the average of each variable for each activity and each subject;
+- create a new data frame called "data3" to store these averaged values.
+- The row names of "data3" are actually "subject"."activity";
+- split the row names back to "subject" and "activity".
+- Add the variables "subject" and "activity" back to "data3";
+- update their colnames and delete the rownames.
+- Output 'data3' to a table file as the final tidy data set.
 
